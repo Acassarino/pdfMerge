@@ -44,8 +44,9 @@ class PDFMergerApp:
         self.progress = Progressbar(master, orient="horizontal", mode="determinate", length=400)
         self.progress.pack(pady=5)
 
-        self.footer = tk.Label(master, text="PDF Merger v1.0 - Andrea Cassarino - ing.acassarino@gmail.com", anchor='e')
-        self.footer.pack(side="bottom", anchor="se", padx=5, pady=5)
+        self.footer = tk.Label(master, text="PDF Merger v1.1 - Andrea Cassarino - ing.acassarino@gmail.com", anchor='e')
+        self.footer.pack(side="bottom", anchor="sw", padx=10, pady=5)
+
 
     def load_pdfs(self):
         filepaths = filedialog.askopenfilenames(filetypes=[("PDF files", "*.pdf")])
