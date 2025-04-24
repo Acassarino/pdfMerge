@@ -47,7 +47,6 @@ class PDFMergerApp:
         self.footer = tk.Label(master, text="PDF Merger v1.1 - Andrea Cassarino - ing.acassarino@gmail.com", anchor='e')
         self.footer.pack(side="bottom", anchor="sw", padx=10, pady=5)
 
-
     def load_pdfs(self):
         filepaths = filedialog.askopenfilenames(filetypes=[("PDF files", "*.pdf")])
         for path in filepaths:
