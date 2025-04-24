@@ -6,7 +6,6 @@ import os
 import threading
 from PIL import Image, ImageTk
 import io
-
 class PDFMergerApp:
     def __init__(self, master):
         self.master = master
